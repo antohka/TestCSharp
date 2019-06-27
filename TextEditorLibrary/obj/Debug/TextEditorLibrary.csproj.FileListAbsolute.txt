@@ -1,0 +1,16 @@
+E:\Text_Editor\TextEditorLibrary\bin\Debug\TextEditorLibrary.dll
+E:\Text_Editor\TextEditorLibrary\bin\Debug\TextEditorLibrary.pdb
+E:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.csprojAssemblyReference.cache
+E:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.csproj.CoreCompileInputs.cache
+E:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.dll
+E:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.pdb
+E:\Text_Editor\TextEditorLibrary\bin\Debug\ICSharpCode.AvalonEdit.dll
+E:\Text_Editor\TextEditorLibrary\bin\Debug\ICSharpCode.AvalonEdit.xml
+E:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.csproj.CopyComplete
+H:\Text_Editor\TextEditorLibrary\bin\Debug\TextEditorLibrary.dll
+H:\Text_Editor\TextEditorLibrary\bin\Debug\TextEditorLibrary.pdb
+H:\Text_Editor\TextEditorLibrary\bin\Debug\ICSharpCode.AvalonEdit.dll
+H:\Text_Editor\TextEditorLibrary\bin\Debug\ICSharpCode.AvalonEdit.xml
+H:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.dll
+H:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.pdb
+H:\Text_Editor\TextEditorLibrary\obj\Debug\TextEditorLibrary.csprojResolveAssemblyReference.cache
