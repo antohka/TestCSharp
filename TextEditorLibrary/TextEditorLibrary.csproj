@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="FileManeger.cs" />
     <Compile Include="IFileManeger.cs" />
+    <Compile Include="FileManegerDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

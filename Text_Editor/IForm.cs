@@ -9,7 +9,6 @@ namespace Text_Editor
 {
     interface IForm
     {
-        object GetLocker { get; }
         string FilePath { get; }
         string GetFileDB { get; set; }
         string GetDBFile { get;}

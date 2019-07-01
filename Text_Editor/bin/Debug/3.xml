@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mynamespace xmlns="http://facebook.com/">
+		<note date="12/11/2007" >
+	   <to>Tove</to>
+	   <from>Jani</from>
+	</note>
+
+</mynamespace>
+
+<!ELEMENT note(to, from)>

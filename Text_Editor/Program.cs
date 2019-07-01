@@ -18,8 +18,9 @@ namespace Text_Editor
             Form form = new Form();
             MessageService service = new MessageService();
             FileManeger maneger = new FileManeger();
+            FileManegerDB manegerDB = new FileManegerDB();
 
-            FormPresenter presenter = new FormPresenter(form, maneger, service);
+            FormPresenter presenter = new FormPresenter(form, maneger, manegerDB, service);
 
             Application.Run(form);
         }

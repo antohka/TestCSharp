@@ -8,8 +8,6 @@ namespace Text_Editor
 {
     public partial class Form : System.Windows.Forms.Form, IForm
     {
-        private object locker = new object();
-
         public Form()
         {
             InitializeComponent();
@@ -23,13 +21,6 @@ namespace Text_Editor
             fontSize.ValueChanged += SetValueChanged;
         }
 
-        public object GetLocker
-        {
-            get
-            {
-                return locker;
-            }
-        }
         public string GetFileDB
         {
             get

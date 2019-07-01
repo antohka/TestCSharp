@@ -8,12 +8,13 @@ namespace TextEditorLibrary
 {
     public interface IFileManeger
     {
+        string ConnectionString { get; }
         string GetContent(string filePath);
         string GetContent(string filePath, Encoding encoding);
         void SaveContent(string content, string filePath);
         void SaveContent(string content, string filePath, Encoding encoding);
-        string SaveContentDB(string content, string fileName);
-        string GetContentDB(string f);
+        //string SaveContentDB(string content, string fileName);
+        //string GetContentDB(string f);
         bool IsExist(string filePath);
     }
 }

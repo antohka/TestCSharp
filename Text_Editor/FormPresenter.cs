@@ -14,13 +14,15 @@ namespace Text_Editor
     {       
         private readonly IForm _view;
         private readonly IFileManeger _maneger;
+        private readonly IFileManeger _manegerDB;
         private readonly IMessageService _messageService;
         private string _currentFilePath;
 
-        public FormPresenter(IForm view, IFileManeger maneger, IMessageService messageService)
+        public FormPresenter(IForm view, IFileManeger maneger, IFileManeger manegerDB, IMessageService messageService)
         {
             _view = view;
             _maneger = maneger;
+            _manegerDB = manegerDB;
             _messageService = messageService;
 
             _view.ContentChanged += new EventHandler(_ViewContentChanged);
@@ -42,7 +44,7 @@ namespace Text_Editor
                 string content = "";
 
                 await Task.Factory.StartNew(() =>
-                        content = _maneger.GetContentDB(fileName),
+                        content = _manegerDB.GetContent(fileName),
                          TaskCreationOptions.LongRunning);
                 _view.Content = content;
 
@@ -118,13 +120,11 @@ namespace Text_Editor
             {
                 string text = _view.Content;
                 string name = _view.GetFileDB;
-                string result = await Task.Factory.StartNew<string>(
-                                           () => _maneger.SaveContentDB(text, name),
-                                           TaskCreationOptions.LongRunning);
-                if (result != "")
-                    _messageService.ShowMessage(result);
-                else
-                    _messageService.ShowError("Enter a file name please");
+                await Task.Factory.StartNew(
+                                  () => _manegerDB.SaveContent(text, name),
+                                  TaskCreationOptions.LongRunning);
+
+                _messageService.ShowMessage("Save of the file is success");
             }
             catch (Exception ex)
             {
